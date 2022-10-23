@@ -1,0 +1,239 @@
+/* ------------------------------GENERAL STYLE-------------------------------------------*/
+body {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
+    Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 1em;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.main-grid-sale {
+    display: flex;
+    justify-content: center;
+
+}
+.grid-col-main {
+    display: grid;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: 50%;
+    text-align: center;
+    min-width: 1000px;
+}
+
+img {
+    width: 100%;
+}
+
+/* ------------------------------DIV1 STYLE-------------------------------------------*/
+
+.div1 {
+    grid-row: 1/ 3;
+    display: flex;
+    align-items: center;
+
+
+}
+/*GNARLY LOGO*/
+.grid-1-gnarly-logo {
+    width: 140px;
+    transition: rotate 0.40s ease-in-out;  
+}
+.grid-1-gnarly-logo:hover {
+    rotate: -15deg;
+}
+
+/* ------------------------------DIV2 STYLE-------------------------------------------*/
+.div2 {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    column-gap: 20px;
+}
+.grid-2-searchbox {
+    background-color: black;
+    width: 40%;
+}
+
+.free-shipping-col,
+.cart-col {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding-left: 5px;
+    width: 30%;
+   
+}
+.free-shipping-child-col,
+.cart-child-col {
+    display: flex;
+    flex-direction:column;    
+    align-items: flex-start;
+}
+.free-shipping-title,
+.cart-title {
+    font-size: 2.1rem;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+.span-shipping-text {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.span-cart-text {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.span-shipping-text-two,
+.span-cart-text-two {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* ------------------------------DIV3 STYLE-------------------------------------------*/
+.nav-grid3-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding:0;
+    margin-top: 2px;
+    padding-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
+    Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.nav-grid3-list a {      /* ------------------------------nav list grid3 & grid4 styel-------------------------------------------*/
+    color: black;
+}
+.nav-grid3-list a:hover,       
+.nav-grid4-list a:hover {
+    color: yellow;
+}
+.nav-grid3-list li {
+    padding: 5px 8px;
+}
+.nav-grid3-list li:hover {
+    background-color: black;
+    padding: 5px 8px;
+}
+/* ------------------------------DIV4 STYLE-------------------------------------------*/
+.div4 {
+    background-color: black;
+    grid-column: 1/3;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+   
+}
+.div4-title-sale {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-left: 20px;
+
+}
+.div4-button-sort { 
+    font-size: 1.2rem;
+    margin-right: 20px;
+    font-weight: 700;
+    font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
+    Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    width: 150px;
+    padding: 2px 0;
+    padding-left: 5px;
+    text-align: left;
+}
+
+/* ------------------------------DIV5 STYLE-------------------------------------------*/
+.div5 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.grid-5-title-shop {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: black;
+    font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
+    Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.nav-grid4-list {
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
+    Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+ul li, a {          /* ------------------------------ul li style-------------------------------------------*/
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    text-align:left;
+    margin: 0;
+    padding: 0;
+}
+/* ------------------------------DIV6 STYLE-------------------------------------------*/
+
+/* ------------------------------DIV7 STYLE-------------------------------------------*/
+.div7 {
+    grid-column: 2/3;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.child-grid-col1 {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.30s ease-in;
+}
+.child-grid-col1:hover {
+    transform: translateY(-10px);
+}
+.child-grid-col2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 43px;
+}
+.sale-title-price {
+    color: yellow;
+    margin-right: 25px;
+}
+.sale-title {
+    margin-left: 25px;
+}
+
+/* ------------------------------FOOTER-------------------------------------------*/
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+
+
+}
+.copyright {
+    margin: 5px;
+    font-size: 12px;    
+    color: white;
+}

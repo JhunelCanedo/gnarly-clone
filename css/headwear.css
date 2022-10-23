@@ -25,7 +25,6 @@ body {
     width: 50%;
     text-align: center;
     min-width: 1000px;
-    grid-auto-rows: 100px auto;
 }
 
 img {
@@ -113,6 +112,20 @@ img {
     font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
     Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
+.nav-grid3-list a {      /* ------------------------------nav list grid3 & grid4 styel-------------------------------------------*/
+    color: black;
+}
+.nav-grid3-list a:hover,       
+.nav-grid4-list a:hover {
+    color: yellow;
+}
+.nav-grid3-list li {
+    padding: 5px 8px;
+}
+.nav-grid3-list li:hover {
+    background-color: black;
+    padding: 5px 8px;
+}
 /* ------------------------------DIV4 STYLE-------------------------------------------*/
 .div4 {
     background-color: black;
@@ -166,7 +179,7 @@ img {
     font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
     Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
-li, a {
+ul li, a {              /* ------------------------------ul li style-------------------------------------------*/
     text-decoration: none;
     color: black;
     list-style: none;
@@ -174,11 +187,6 @@ li, a {
     margin: 0;
     padding: 0;
 }
-a:hover {
-    color: rgb(123, 255, 0)
-}
-
-
 
 /* ------------------------------DIV6 STYLE-------------------------------------------*/
 
@@ -190,23 +198,43 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-.div7-child-col {
+.child-grid-col1 {
     display: flex;
     flex-direction: column;
     transition: transform 0.30s ease-in;
 }
-.div7-child-col:hover {
+.child-grid-col1:hover {
     transform: translateY(-10px);
 }
-.div7-child-col2 {
+.child-grid-col2 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
-    height: 50px;
-    padding-left: 15px;
+    height: 43px;
 }
-.div7-child-sale-title {
+.sale-title-price {
     color: yellow;
     margin-right: 25px;
+}
+.sale-title {
+    margin-left: 25px;
+}
+
+/* ------------------------------FOOTER-------------------------------------------*/
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+
+
+}
+.copyright {
+    margin: 5px;
+    font-size: 12px;    
+    color: white;
 }
