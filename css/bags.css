@@ -97,35 +97,29 @@ img {
     font-size: 10px;
     letter-spacing: 1px;
 }
-
 /* ------------------------------DIV3 STYLE-------------------------------------------*/
 .nav-grid3-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     color: black;
-    padding:0;
-    margin-top: 2px;
-    padding-bottom: 8px;
+    padding: 0;
+    justify-content: space-between;
     font-size: 1.1rem;
     font-weight: 900;
     font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
     Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
-.nav-grid3-list a {      /* ------------------------------nav list grid3 & grid4 styel-------------------------------------------*/
+.nav-grid3-list a {      /* ------------------------------nav list grid3-------------------------------------------*/
+    display: block;
+    padding: 4px 14px;
     color: black;
 }
-.nav-grid3-list a:hover,       
-.nav-grid4-list a:hover {
+
+.nav-grid3-list a:hover {
     color: yellow;
-}
-.nav-grid3-list li {
-    padding: 5px 8px;
-}
-.nav-grid3-list li:hover {
     background-color: black;
-    padding: 5px 8px;
 }
+
+
 /* ------------------------------DIV4 STYLE-------------------------------------------*/
 .div4 {
     background-color: black;
@@ -170,22 +164,28 @@ img {
     Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
 .nav-grid4-list {
-    padding:0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;    
     row-gap: 10px;
+    padding: 0;
     font-size: 1.2rem;
     font-weight: 900;
     font-family: futura-pt,-apple-system,BlinkMacSystemFont,Segoe UI,
     Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
-ul li, a {          /* ------------------------------ul li style-------------------------------------------*/
+ /* ------------------------------nav-grid4  && ul li style-------------------------------------------*/
+ .nav-grid4-list a:hover {
+    color: yellow;
+}
+ul li {             
+    list-style: none;
+    padding: 0;
+
+}
+a {
     text-decoration: none;
     color: black;
-    list-style: none;
-    text-align:left;
-    margin: 0;
-    padding: 0;
 }
 /* ------------------------------DIV6 STYLE-------------------------------------------*/
 
